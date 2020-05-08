@@ -1,0 +1,22 @@
+{
+  "name": "esbuild-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx esbuild index.ts --bundle '--define:process.env.NODE_ENV=\"production\"' --minify --outfile=./dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "esbuild": "^0.2.9"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rxjs": "^6.5.5"
+  }
+}
